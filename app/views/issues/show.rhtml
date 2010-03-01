@@ -56,6 +56,11 @@
 
 <%= call_hook(:view_issues_show_description_bottom, :issue => @issue) %>
 
+<hr />
+<div id="private_notes">
+<%= render :partial => 'private_notes', :locals => { :issue_id => @issue.id } %>
+</div>
+
 <% if authorize_for('issue_relations', 'new') || @issue.relations.any? %>
 <hr />
 <div id="relations">

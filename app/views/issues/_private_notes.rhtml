@@ -1,0 +1,6 @@
+<div class="contextual">
+	<%= link_to_remote l(:button_edit), :url => { :controller => 'issue_notes', :action => 'show', :id => issue_id }, :update => { :success => 'private-notes-form'} %>
+</div>
+<p><strong>Private Notes</strong></p>
+<div id="private-notes-form">
+</div>

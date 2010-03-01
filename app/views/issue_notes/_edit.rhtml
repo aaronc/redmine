@@ -1,0 +1,4 @@
+<% form_remote_tag :url => {:controller => '/issue_notes', :action => 'save', :id => issue_id} do -%>
+<%= text_area(:note, :note, :cols => 80)%><br />
+<%= submit_tag 'Save' %>
+<% end -%>
